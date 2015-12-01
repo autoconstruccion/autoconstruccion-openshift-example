@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "** build: Activating virtualenv"
+source $VIRTUAL_ENV/bin/activate
+#echo "** build: Installing app requirements"
+#pip install -r ${OPENSHIFT_REPO_DIR}autoconstruccion/requirements.txt --no-cache-dir
+echo "** build: Installing Autoconstruccion app"
+pip install -e ${OPENSHIFT_REPO_DIR}autoconstruccion/server_app --upgrade --no-cache-dir
+

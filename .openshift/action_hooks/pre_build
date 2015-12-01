@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "** pre_build: Creating env variables"
+cd ${OPENSHIFT_HOMEDIR}/.env/user_vars
+echo "${OPENSHIFT_REPO_DIR}autoconstruccion/requirements.txt" > OPENSHIFT_PYTHON_REQUIREMENTS_PATH
+echo "${OPENSHIFT_REPO_DIR}autoconstruccion/server_app/autoconstruccion.wsgi" > OPENSHIFT_PYTHON_WSGI_APPLICATION
+echo "${OPENSHIFT_REPO_DIR}config.py" > AUTOCONSTRUCCION_APP_CONFIG_FILE
+
